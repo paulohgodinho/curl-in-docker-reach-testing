@@ -3,23 +3,23 @@
 echo "Testing Started"
 
 echo "First Curl"
-curl -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output1.txt
+curl -f -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output1.txt
 echo "1 - Result: $?" >> ./result.txt
 
 echo "Second Curl"
-curl -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output2.txt
+curl -f -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output2.txt
 echo "2 - Result: $?" >> ./result.txt
 
 echo "Third Curl"
-curl -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output3.txt
+curl -f -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output3.txt
 echo "3 - Result: $?" >> ./result.txt
 
 echo "Fourth Curl"
-curl -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output4.txt
+curl -f -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output4.txt
 echo "4 - Result: $?" >> ./result.txt
 
 echo "Fifth Curl"
-curl -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output5.txt
+curl -f -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output5.txt
 echo "5 - Result: $?" >> ./result.txt
 
 printf "\n \n" >> result.txt
