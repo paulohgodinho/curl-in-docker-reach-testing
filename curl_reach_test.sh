@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+set -o pipefail
 echo "Testing Started"
 
 echo "First Curl"
@@ -47,3 +48,5 @@ printf "\n \n" >> result.txt
 echo "5 - ##################" >> ./result.txt
 cat ./output5.txt >> result.txt
 rm ./output5.txt
+
+set +o pipefail
