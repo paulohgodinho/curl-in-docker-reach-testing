@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 TRIES=20
 URL=speedtest.tele2.net/3MB.zip 
