@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 TRIES=20
-# URL=speedtest.tele2.net/3MB.zip 
-URL=https://shorturl.at/A5lbu
+URL=speedtest.tele2.net/3MB.zip 
+# URL=https://shorturl.at/A5lbu
 
 set -o pipefail
 echo "Testing Started"
