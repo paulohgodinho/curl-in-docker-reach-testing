@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
 TRIES=20
+# URL=speedtest.tele2.net/3MB.zip 
+URL=https://shorturl.at/A5lbu
 
 set -o pipefail
 echo "Testing Started"
@@ -8,7 +10,7 @@ echo "Testing Started"
 for i in $(seq 1 $TRIES)
 do
     echo " ${i} - Curl"
-    curl -f -v -o/dev/null speedtest.tele2.net/3MB.zip 2>&1 | tee ./output${i}.txt
+    curl -f -v -o/dev/null $URL 2>&1 | tee ./output${i}.txt
     echo "${i} - Result: $?" >> ./result.txt
 done
 
